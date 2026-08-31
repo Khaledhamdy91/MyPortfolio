@@ -3,32 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Khaled Hamdy - Information Security & Cybersecurity Professional" />
-  <meta name="theme-color" content="#07111d" />
+  <meta name="description" content="Khaled Hamdy — Information Security, Cybersecurity and Network Security professional in Cairo, Egypt." />
+  <meta name="theme-color" content="#07111f" />
+  <meta property="og:title" content="Khaled Hamdy | Information Security" />
+  <meta property="og:description" content="Information Security professional with 10 years of experience across security and IT consulting." />
+  <meta property="og:type" content="website" />
   <title>Khaled Hamdy | Information Security</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
+  <div class="page-progress" id="pageProgress" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
 
   <header class="site-header" id="top">
     <nav class="nav container" aria-label="Primary navigation">
-      <a class="brand" href="#home" aria-label="Khaled Hamdy home">KH<span>.</span></a>
+      <a class="brand" href="#home" aria-label="Khaled Hamdy home">
+        <span class="brand-mark">KH</span>
+        <span class="brand-copy">Khaled Hamdy<small>Information Security</small></span>
+      </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#expertise">Expertise</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#credentials">Credentials</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+        <li><a class="nav-cta" href="#contact">Connect</a></li>
       </ul>
     </nav>
   </header>
@@ -37,194 +48,367 @@
     <section class="hero section" id="home">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="status-dot"></span> Information Security Professional</p>
-          <h1>Khaled <span>Hamdy</span></h1>
-          <p class="hero-title">Cybersecurity · Information Security · Network Security</p>
+          <div class="availability-pill">
+            <span class="pulse-dot"></span>
+            Cairo, Egypt · Information Security
+          </div>
+
+          <p class="hero-kicker">Protect · Detect · Strengthen</p>
+          <h1>Khaled Hamdy</h1>
+          <h2>Securing systems.<br /><span>Strengthening resilience.</span></h2>
           <p class="hero-text">
-            Information security professional focused on protecting enterprise environments, strengthening cyber resilience, and reducing technology risk through practical security controls and secure infrastructure.
+            Information Security professional with 10 years of experience across information security and IT consulting, focused on practical defense, secure infrastructure, and risk reduction.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/khaledhamdy91/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/khaledhamdy91/" target="_blank" rel="noopener noreferrer">
+              View LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+            <a class="btn btn-secondary" href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer">
+              Verify Credentials <span aria-hidden="true">↗</span>
+            </a>
           </div>
 
-          <div class="hero-meta">
-            <span>Cairo, Egypt</span>
-            <span>Available on LinkedIn</span>
+          <div class="hero-proof" aria-label="Professional highlights">
+            <div><strong>10</strong><span>Years in security & IT consulting</span></div>
+            <div><strong>EBI</strong><span>Egyptian Banking Institute</span></div>
+            <div><strong>10+</strong><span>LinkedIn recommendations</span></div>
           </div>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Profile visual">
-          <div class="profile-shell">
-            <div class="profile-ring"></div>
-            <img src="https://avatars.githubusercontent.com/u/139571165?v=4" alt="Khaled Hamdy" class="profile-image" />
-            <div class="profile-badge">SECURITY / DEFENSE</div>
+        <div class="hero-visual reveal">
+          <div class="profile-stage" data-tilt>
+            <div class="profile-glow" aria-hidden="true"></div>
+            <div class="profile-frame">
+              <img src="https://avatars.githubusercontent.com/u/139571165?v=4" alt="Khaled Hamdy" class="profile-image" />
+              <div class="profile-scan" aria-hidden="true"></div>
+            </div>
+
+            <div class="floating-chip chip-one"><span></span> CyberOps</div>
+            <div class="floating-chip chip-two"><span></span> CCNP Security</div>
+            <div class="floating-chip chip-three"><span></span> IBM Cybersecurity</div>
+
+            <div class="profile-card-footer">
+              <div>
+                <span>Current organization</span>
+                <strong>Egyptian Banking Institute</strong>
+              </div>
+              <span class="shield-mark" aria-hidden="true">⌁</span>
+            </div>
           </div>
         </div>
       </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section">
+        <span>Scroll</span><i></i>
+      </a>
     </section>
 
     <section class="section" id="about">
-      <div class="container two-column">
-        <div class="section-heading reveal">
-          <span class="section-number">01</span>
-          <p class="kicker">About</p>
-          <h2>Security-first thinking for modern infrastructure.</h2>
+      <div class="container section-grid">
+        <div class="section-intro reveal">
+          <span class="section-index">01</span>
+          <p class="eyebrow">About</p>
+          <h2>Security-first thinking for modern organizations.</h2>
         </div>
 
-        <div class="about-content reveal">
-          <p>
-            I work across information security, cybersecurity, and network security with a practical focus on protecting systems, reducing exposure, and supporting resilient technology environments.
+        <div class="about-panel glass-panel reveal">
+          <p class="lead">
+            I work at the intersection of information security, cybersecurity, and enterprise networking—helping organizations protect technology environments and improve cyber resilience.
           </p>
           <p>
-            My interests span security operations, endpoint protection, network defense, threat management, secure architecture, and the continual improvement of organizational security posture.
+            My background combines security operations, network defense, endpoint security, threat management, and IT consulting. I value clear controls, practical implementation, and collaboration across technical teams.
           </p>
 
-          <div class="about-stats">
-            <div><strong>Focus</strong><span>Information Security</span></div>
-            <div><strong>Location</strong><span>Cairo, Egypt</span></div>
-            <div><strong>GitHub</strong><span>@Khaledhamdy91</span></div>
-            <div><strong>LinkedIn</strong><span>@khaledhamdy91</span></div>
+          <div class="profile-facts">
+            <div><span>Based in</span><strong>Cairo, Egypt</strong></div>
+            <div><span>Current organization</span><strong>Egyptian Banking Institute</strong></div>
+            <div><span>Education</span><strong>Cairo University</strong></div>
+            <div><span>Professional focus</span><strong>Information Security</strong></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="experience">
+    <section class="section section-tinted" id="experience">
       <div class="container">
         <div class="section-heading reveal">
-          <span class="section-number">02</span>
-          <p class="kicker">Experience</p>
-          <h2>Professional journey.</h2>
-          <p class="section-copy">Detailed role titles, companies, and dates will be added after final CV/LinkedIn verification.</p>
+          <div>
+            <span class="section-index">02</span>
+            <p class="eyebrow">Experience & education</p>
+          </div>
+          <h2>A decade of technology and security experience.</h2>
+          <p>Public profile information is summarized without exposing confidential employer or project details.</p>
         </div>
 
-        <div class="timeline reveal">
-          <article class="timeline-item">
-            <span class="timeline-marker"></span>
-            <div>
-              <p class="timeline-date">Current focus</p>
-              <h3>Information Security & Cybersecurity</h3>
-              <p>Supporting secure technology environments through security controls, network defense, risk reduction, and cybersecurity practices.</p>
-            </div>
+        <div class="experience-layout">
+          <article class="experience-card featured-card reveal" data-tilt>
+            <div class="card-accent"></div>
+            <div class="experience-meta"><span>Current</span><span>Cairo, Egypt</span></div>
+            <div class="company-monogram">EBI</div>
+            <h3>Egyptian Banking Institute</h3>
+            <p class="role-label">Information Security</p>
+            <p>Supporting secure enterprise technology through cybersecurity controls, network defense, risk reduction, and security-focused operations.</p>
+            <div class="tags"><span>Information Security</span><span>Cybersecurity</span><span>Risk</span></div>
           </article>
-          <article class="timeline-item">
-            <span class="timeline-marker"></span>
-            <div>
-              <p class="timeline-date">Professional background</p>
-              <h3>IT & Security Consulting</h3>
-              <p>Experience spanning enterprise IT, cybersecurity, networking, and secure infrastructure.</p>
-            </div>
+
+          <div class="experience-stack">
+            <article class="experience-card reveal">
+              <div class="experience-meta"><span>Career progression</span><span>10 years</span></div>
+              <h3>IT, network & security roles</h3>
+              <p>Professional development across IT consulting, systems, networking, security engineering, and senior network responsibilities.</p>
+              <ul class="clean-list">
+                <li>Security-minded infrastructure delivery</li>
+                <li>Cross-team collaboration and implementation</li>
+                <li>Working effectively under operational pressure</li>
+              </ul>
+            </article>
+
+            <article class="experience-card education-card reveal">
+              <div class="experience-meta"><span>Education</span><span>2020 — 2023</span></div>
+              <div class="education-row">
+                <div class="company-monogram small">CU</div>
+                <div><h3>Cairo University</h3><p>Grade: Good</p></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="expertise">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-index">03</span>
+            <p class="eyebrow">Expertise</p>
+          </div>
+          <h2>Core capabilities across the security lifecycle.</h2>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card reveal" data-tilt>
+            <span class="expertise-icon">01</span>
+            <h3>Security operations</h3>
+            <p>Monitoring, incident response thinking, threat awareness, and operational security improvement.</p>
+            <div class="tags"><span>CyberOps</span><span>Monitoring</span><span>Response</span></div>
+          </article>
+
+          <article class="expertise-card reveal" data-tilt>
+            <span class="expertise-icon">02</span>
+            <h3>Network defense</h3>
+            <p>Secure networking, segmentation, firewall concepts, VPN, routing, switching, and infrastructure resilience.</p>
+            <div class="tags"><span>Cisco</span><span>Firewalls</span><span>VPN</span></div>
+          </article>
+
+          <article class="expertise-card reveal" data-tilt>
+            <span class="expertise-icon">03</span>
+            <h3>Endpoint & threat security</h3>
+            <p>Endpoint protection, cyber threat management, hardening, and vulnerability-conscious operations.</p>
+            <div class="tags"><span>Endpoint</span><span>Threats</span><span>Hardening</span></div>
+          </article>
+
+          <article class="expertise-card reveal" data-tilt>
+            <span class="expertise-icon">04</span>
+            <h3>Risk & consulting</h3>
+            <p>Translating technical risk into practical controls, implementation priorities, and security improvements.</p>
+            <div class="tags"><span>Risk</span><span>Controls</span><span>Consulting</span></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="skills">
+    <section class="section section-tinted" id="projects">
       <div class="container">
         <div class="section-heading reveal">
-          <span class="section-number">03</span>
-          <p class="kicker">Skills</p>
-          <h2>Core security capabilities.</h2>
+          <div>
+            <span class="section-index">04</span>
+            <p class="eyebrow">Projects</p>
+          </div>
+          <h2>Public work and professional practice.</h2>
+          <p>Confidential enterprise security work is intentionally kept private.</p>
         </div>
 
-        <div class="skills-grid reveal">
-          <article class="skill-card">
-            <span class="skill-index">A</span>
-            <h3>Cybersecurity</h3>
-            <div class="tags">
-              <span>Information Security</span><span>Security Operations</span><span>Threat Management</span><span>Incident Response</span><span>Risk Management</span>
+        <div class="projects-grid">
+          <article class="project-card project-featured reveal" data-tilt>
+            <div class="project-visual">
+              <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+              <div class="terminal-lines" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>Public repository</span><span>2026</span></div>
+              <h3>MyPortfolio</h3>
+              <p>A responsive GitHub Pages portfolio created to present information security experience, professional credibility, and verified learning.</p>
+              <div class="project-links">
+                <a href="https://github.com/Khaledhamdy91/MyPortfolio" target="_blank" rel="noopener noreferrer">Repository ↗</a>
+                <a href="https://khaledhamdy91.github.io/MyPortfolio/" target="_blank" rel="noopener noreferrer">Live site ↗</a>
+              </div>
             </div>
           </article>
-          <article class="skill-card">
-            <span class="skill-index">B</span>
-            <h3>Network Security</h3>
-            <div class="tags">
-              <span>Network Defense</span><span>Firewalls</span><span>VPN</span><span>Routing</span><span>Switching</span><span>Secure Architecture</span>
-            </div>
+
+          <article class="project-card reveal">
+            <div class="project-meta"><span>Professional practice</span><span>Private</span></div>
+            <h3>Enterprise security initiatives</h3>
+            <p>Security and infrastructure work completed in professional environments remains confidential. High-level experience can be discussed through professional channels.</p>
+            <div class="tags"><span>Enterprise</span><span>Security</span><span>Infrastructure</span></div>
           </article>
-          <article class="skill-card">
-            <span class="skill-index">C</span>
-            <h3>Security Technologies</h3>
-            <div class="tags">
-              <span>Endpoint Security</span><span>Monitoring</span><span>Hardening</span><span>Vulnerability Management</span><span>Cisco</span><span>Fortinet</span>
-            </div>
+
+          <article class="project-card reveal">
+            <div class="project-meta"><span>Continual learning</span><span>Labs</span></div>
+            <h3>Cybersecurity & network labs</h3>
+            <p>Hands-on learning aligned with CyberOps, network defense, endpoint security, threat management, and professional certification paths.</p>
+            <div class="tags"><span>CyberOps</span><span>Network Defense</span><span>Endpoint</span></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="projects">
+    <section class="section" id="credentials">
       <div class="container">
         <div class="section-heading reveal">
-          <span class="section-number">04</span>
-          <p class="kicker">Projects</p>
-          <h2>Selected security work.</h2>
-          <p class="section-copy">Only projects that are safe and appropriate for public presentation will be listed here.</p>
+          <div>
+            <span class="section-index">05</span>
+            <p class="eyebrow">Credentials</p>
+          </div>
+          <h2>Verified learning and professional certifications.</h2>
+          <p>Credential dates and issuers are based on the public LinkedIn profile. The Credly badge wallet is linked for digital verification.</p>
         </div>
 
-        <div class="project-toolbar reveal" role="group" aria-label="Project filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="security">Security</button>
-          <button class="filter-btn" data-filter="network">Networking</button>
-          <button class="filter-btn" data-filter="automation">Automation</button>
+        <a class="credly-banner reveal" href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer">
+          <div class="credly-mark">C</div>
+          <div>
+            <span>Digital badge wallet</span>
+            <strong>View verified credentials on Credly</strong>
+          </div>
+          <span class="banner-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <div class="credential-highlight reveal">
+          <div class="badge-orbit" aria-hidden="true"><span>AI</span></div>
+          <div>
+            <span class="credential-label">Latest achievement</span>
+            <h3>AI Skills Fest 2026</h3>
+            <p>Issued by Microsoft · 2026</p>
+          </div>
+          <a href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer">View badge wallet ↗</a>
         </div>
 
-        <div class="projects-grid reveal" id="projectsGrid">
-          <article class="project-card" data-category="security">
-            <div class="project-topline"><span>01</span><span>SECURITY</span></div>
-            <h3>Security Assessment Lab</h3>
-            <p>Demonstration environment for vulnerability identification, security analysis, remediation planning, and defensive security practices.</p>
-            <div class="tags"><span>Assessment</span><span>Hardening</span><span>Risk</span></div>
-          </article>
+        <div class="cert-grid" id="certGrid">
+          <a class="cert-card reveal" data-tilt href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer">
+            <div class="cert-logo ibm">IBM</div>
+            <div class="cert-copy"><span>November 2023</span><h3>IBM Cybersecurity Analyst Professional</h3><p>IBM</p></div>
+            <span class="cert-arrow">↗</span>
+          </a>
 
-          <article class="project-card" data-category="network">
-            <div class="project-topline"><span>02</span><span>NETWORK</span></div>
-            <h3>Secure Network Architecture</h3>
-            <p>Reference design focused on segmentation, controlled access, resilience, and secure enterprise networking principles.</p>
-            <div class="tags"><span>Network Security</span><span>Segmentation</span><span>Firewall</span></div>
-          </article>
+          <a class="cert-card reveal" data-tilt href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer">
+            <div class="cert-logo cisco">C</div>
+            <div class="cert-copy"><span>July 2023</span><h3>Cyber Threat Management</h3><p>Cisco Networking Academy</p></div>
+            <span class="cert-arrow">↗</span>
+          </a>
 
-          <article class="project-card" data-category="automation">
-            <div class="project-topline"><span>03</span><span>AUTOMATION</span></div>
-            <h3>Security Workflow Automation</h3>
-            <p>Concept project for reducing repetitive operational work and improving consistency across routine security processes.</p>
-            <div class="tags"><span>Automation</span><span>Operations</span><span>Security</span></div>
-          </article>
+          <a class="cert-card reveal" data-tilt href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer">
+            <div class="cert-logo cisco">C</div>
+            <div class="cert-copy"><span>July 2023</span><h3>Endpoint Security</h3><p>Cisco Networking Academy</p></div>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <a class="cert-card reveal" data-tilt href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer">
+            <div class="cert-logo cisco">C</div>
+            <div class="cert-copy"><span>October 2022</span><h3>Network Security</h3><p>Cisco Networking Academy</p></div>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <a class="cert-card reveal" data-tilt href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer">
+            <div class="cert-logo cisco">C</div>
+            <div class="cert-copy"><span>October 2022</span><h3>CyberOps Associate</h3><p>Cisco Networking Academy</p></div>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <a class="cert-card reveal" data-tilt href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer">
+            <div class="cert-logo cisco">C</div>
+            <div class="cert-copy"><span>October 2022</span><h3>Network Defense</h3><p>Cisco Networking Academy</p></div>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <a class="cert-card reveal cert-extra" data-tilt href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer" hidden>
+            <div class="cert-logo cisco">C</div>
+            <div class="cert-copy"><span>2022 — 2025 · Historical</span><h3>Cisco Certified Network Professional Security</h3><p>Cisco</p></div>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <a class="cert-card reveal cert-extra" data-tilt href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer" hidden>
+            <div class="cert-logo cisco">C</div>
+            <div class="cert-copy"><span>2021 — 2025 · Historical</span><h3>Cisco Certified Network Professional</h3><p>Cisco</p></div>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <a class="cert-card reveal cert-extra" data-tilt href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer" hidden>
+            <div class="cert-logo fortinet">F</div>
+            <div class="cert-copy"><span>2022 — 2024 · Historical</span><h3>Fortinet Certified Associate Cybersecurity</h3><p>Fortinet</p></div>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <a class="cert-card reveal cert-extra" data-tilt href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer" hidden>
+            <div class="cert-logo cisco">C</div>
+            <div class="cert-copy"><span>2018 — 2021 · Historical</span><h3>CCNA Routing & Switching</h3><p>Cisco</p></div>
+            <span class="cert-arrow">↗</span>
+          </a>
         </div>
+
+        <button class="show-more-btn reveal" id="showMoreCerts" type="button" aria-expanded="false">
+          Show earlier credentials <span aria-hidden="true">+</span>
+        </button>
       </div>
     </section>
 
-    <section class="section" id="certifications">
+    <section class="section section-tinted" id="recommendations">
       <div class="container">
         <div class="section-heading reveal">
-          <span class="section-number">05</span>
-          <p class="kicker">Certifications</p>
-          <h2>Continuous security learning.</h2>
-          <p class="section-copy">Exact certificate names, issuers, and credential links will be added once verified from the source profile or CV.</p>
+          <div>
+            <span class="section-index">06</span>
+            <p class="eyebrow">Recommendations</p>
+          </div>
+          <h2>Recognized by colleagues for knowledge and dedication.</h2>
+          <p>Paraphrased highlights from public LinkedIn recommendations.</p>
         </div>
 
-        <div class="cert-grid reveal">
-          <article class="cert-card"><span>01</span><h3>Cybersecurity</h3><p>Professional training and certifications in defensive security and cyber operations.</p></article>
-          <article class="cert-card"><span>02</span><h3>Network Security</h3><p>Security-focused networking, infrastructure defense, and enterprise security technologies.</p></article>
-          <article class="cert-card"><span>03</span><h3>Security Operations</h3><p>Threat monitoring, incident handling, endpoint protection, and network defense.</p></article>
+        <div class="recommendation-grid">
+          <article class="recommendation-card reveal" data-tilt>
+            <div class="quote-mark">“</div>
+            <p>Recognized for deep security knowledge, dedication, proactive vulnerability identification, and effective collaboration with other teams.</p>
+            <div class="recommender"><span>MY</span><div><strong>Mohamed Youssef</strong><small>LinkedIn recommendation</small></div></div>
+          </article>
+
+          <article class="recommendation-card reveal" data-tilt>
+            <div class="quote-mark">“</div>
+            <p>Known for rapid professional growth, strong organization, handling pressure, and progressing into senior network engineering responsibilities.</p>
+            <div class="recommender"><span>ME</span><div><strong>Mohamed El-Masry</strong><small>LinkedIn recommendation</small></div></div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section contact-section" id="contact">
-      <div class="container contact-grid reveal">
+      <div class="container contact-wrap reveal">
         <div>
-          <span class="section-number">06</span>
-          <p class="kicker">Contact</p>
-          <h2>Let’s connect.</h2>
-          <p class="section-copy">For professional networking, information security discussions, and collaboration opportunities.</p>
+          <span class="section-index">07</span>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s talk security.</h2>
+          <p>Connect for professional networking, cybersecurity discussions, and collaboration opportunities.</p>
         </div>
 
-        <div class="contact-links">
-          <a href="https://www.linkedin.com/in/khaledhamdy91/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span>↗</span></a>
-          <a href="https://github.com/Khaledhamdy91" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>↗</span></a>
+        <div class="contact-actions">
+          <a href="https://www.linkedin.com/in/khaledhamdy91/" target="_blank" rel="noopener noreferrer">
+            <span><small>Professional profile</small>LinkedIn</span><b>↗</b>
+          </a>
+          <a href="https://github.com/Khaledhamdy91" target="_blank" rel="noopener noreferrer">
+            <span><small>Code & projects</small>GitHub</span><b>↗</b>
+          </a>
+          <a href="https://www.credly.com/users/khaledhamdy91/badges/credly" target="_blank" rel="noopener noreferrer">
+            <span><small>Verified badges</small>Credly</span><b>↗</b>
+          </a>
         </div>
       </div>
     </section>
@@ -233,6 +417,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <span>© <span id="year"></span> Khaled Hamdy</span>
+      <span>Information Security · Cairo, Egypt</span>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
