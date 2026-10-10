@@ -17,7 +17,7 @@ jobs:
           PL=$(find "$ANDROID_SDK_ROOT/platforms" -maxdepth 1 -type d -name 'android-[0-9]*' | sed 's#.*/android-##' | grep -E '^[0-9]+$' | sort -n | tail -1)
           cp "$ANDROID_SDK_ROOT/build-tools/$BT/apksigner" out/
           cp "$ANDROID_SDK_ROOT/build-tools/$BT/lib/apksigner.jar" out/
-          cp "$ANDROID_SDK_ROOT/build-tools/$BT/zipalign" out/
+          cp "$ANDROID_SDK_ROOT/build-tools/$BT/zipalign" out/\n          cp "$ANDROID_SDK_ROOT/build-tools/$BT/lib64/libc++.so" out/
           cp "$ANDROID_SDK_ROOT/build-tools/$BT/aapt2" out/
           cp "$ANDROID_SDK_ROOT/build-tools/$BT/lib/d8.jar" out/
           cp "$ANDROID_SDK_ROOT/platforms/android-$PL/android.jar" out/
