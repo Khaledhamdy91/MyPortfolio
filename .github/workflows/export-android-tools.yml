@@ -15,7 +15,7 @@ jobs:
           curl -L --fail -o out/apktool.jar https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar
           BT=$(ls -1 "$ANDROID_SDK_ROOT/build-tools" | sort -V | tail -1)
           PL=$(ls -1 "$ANDROID_SDK_ROOT/platforms" | sed 's/android-//' | sort -n | tail -1)
-          cp "$ANDROID_SDK_ROOT/build-tools/$BT/apksigner" out/
+          cp "$ANDROID_SDK_ROOT/build-tools/$BT/apksigner" out/\n          cp "$ANDROID_SDK_ROOT/build-tools/$BT/lib/apksigner.jar" out/
           cp "$ANDROID_SDK_ROOT/build-tools/$BT/zipalign" out/
           cp "$ANDROID_SDK_ROOT/build-tools/$BT/aapt2" out/
           cp "$ANDROID_SDK_ROOT/build-tools/$BT/lib/d8.jar" out/
